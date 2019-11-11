@@ -54,14 +54,31 @@ $ sudo apt install ncbi-blast+
 
 6. Install [ABySS](https://github.com/bcgsc/abyss/releases)
 
-> Download and Extract contents
+* Download and Extract contents
 * Install Boost, run 
 ```
 $ wget http://downloads.sourceforge.net/project/boost/boost/1.56.0/boost_1_56_0.tar.bz2
 $ tar jxf boost_1_56_0.tar.bz2
 ```
-* In abyss folder, run `$ ./configure`
-* 
+* In abyss folder, run
+```
+$ ./configure
+$ make
+$ sudo make install
+```
+* In 'seqFrog_conf.py' list path to abyss script in 'abyss_folder'
+* If issues with latest release, download v2.1.5
+
+7. Install [SPAdes](http://cab.spbu.ru/software/spades/)
+* Download and Extract contents
 * In 'seqFrog_conf.py' list path to abyss script in 'abyss_folder'
 
-7.
+8. Install Oases
+```
+$ git clone --recursive https://github.com/dzerbino/oases
+$ make
+```
+* In 'seqFrog_conf.py' list path to oases script in 'oases_folder'
+* If system fails to locate oases then add oases to the last line of your .bashrc file `export PATH="path/to/oases:$PATH"`
+*	If system fails to locate velvet then add velvet to the last line of your .bashrc  `export PATH="/path/to/velveth:$PATH"`
+
