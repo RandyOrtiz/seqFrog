@@ -42,6 +42,7 @@ $ sudo apt install git
 $ sudo apt install velvet
 $ sudo apt install dos2unix
 $ sudo apt install ncbi-blast+
+$ sudo apt install cd-hit
  ```
  
  
@@ -115,5 +116,48 @@ $ sudo make install
 ```
 * Add path to trinity to .bashrc file `export TRINITY_HOME="/path/to/trinity/installation/dir"`
 * In 'seqFrog_conf.py' list path to trinity script in 'trinity_folder'
-* In 'seqFrog_conf.py' list path to Salmon script in 'salmon_folder'
+* In 'seqFrog_conf.py' list path to salmon script in 'salmon_folder'
+
+
+11. Install [Transrate](http://hibberdlab.com/transrate/installation.html)
+* Download and Extract contents
+* In 'seqFrog_conf.py' list path to transrate script in 'transrate_folder'
+
+
+12. Install [Blast](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/)
+* Download and Extract contents
+* In main blast folder, run
+```
+$ ./configure
+$ make
+$ export PATH=$PATH:$HOME/ncbi-blast-2.9.0+/bin
+```
+* In 'seqFrog_conf.py' list path to blast bin in 'blast_folder'
+* In 'seqFrog_conf' list location of 'custom_blast_library' (in test case the uniprot folder)
+* (locate 'uniprot' folder in annotation_libraries directory test library)
+
+
+13. Install [MIRA](https://sourceforge.net/projects/mira-assembler/files/MIRA/)
+* Download and Extract contents
+* In 'seqFrog_conf.py' list path to mirabait script in 'mirabait_folder'
+
+
+14. Install [RSEM](https://deweylab.github.io/RSEM/)
+* Download and Extract latest version
+* In main RSEM folder, run
+```
+$ make
+$ sudo make install
+```
+
+
+15. Install [Kallisto](https://pachterlab.github.io/kallisto/download)
+* Download and Extract latest version
+* In 'seqFrog_conf.py' list path to kallisto script in 'kallisto_folder'
+
+
+16. 
+
+
+
 
