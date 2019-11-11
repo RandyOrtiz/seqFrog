@@ -54,7 +54,7 @@ $ sudo apt install ncbi-blast+
 
 6. Install [ABySS](https://github.com/bcgsc/abyss/releases)
 
-* Download and Extract contents
+> Download and Extract contents
 * Install Boost, run 
 ```
 $ wget http://downloads.sourceforge.net/project/boost/boost/1.56.0/boost_1_56_0.tar.bz2
