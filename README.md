@@ -10,7 +10,9 @@ Introducing a modified pipeline from seqFrog 2019 by:
  
 1. Download seqFrog repository.
  
+ 
 2. Install Python (v3).
+ 
  
 3. Install the following dependencies:
   *One by one...make sure that no errors appear, and if they do following the prompt to correct it.
@@ -42,15 +44,18 @@ $ sudo apt install dos2unix
 $ sudo apt install ncbi-blast+
  ```
  
+ 
 4. Install [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
      
 * Download and Extract contents.
 * In 'seqFrog_conf.py' list path to 'trimmomatic_folder'
-     
+  
+  
 5. Install [Megahit](https://github.com/voutcn/megahit/releases)
  
 * Download and Extract contents
 * In 'seqFrog_conf.py' list path to megahit script in 'megahit_folder'
+
 
 6. Install [ABySS](https://github.com/bcgsc/abyss/releases)
 
@@ -69,9 +74,11 @@ $ sudo make install
 * In 'seqFrog_conf.py' list path to abyss script in 'abyss_folder'
 * If issues with latest release, download v2.1.5
 
+
 7. Install [SPAdes](http://cab.spbu.ru/software/spades/)
 * Download and Extract contents
 * In 'seqFrog_conf.py' list path to abyss script in 'abyss_folder'
+
 
 8. Install Oases
 ```
