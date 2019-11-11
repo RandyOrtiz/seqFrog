@@ -44,9 +44,24 @@ $ sudo apt install ncbi-blast+
  
 4. Install [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
      
- * Download and Extract contents.
- * In 'seqFrog_conf.py' list path to 'trimmomatic_folder'
+* Download and Extract contents.
+* In 'seqFrog_conf.py' list path to 'trimmomatic_folder'
      
-5. Install Megahit
+5. Install [Megahit](https://github.com/voutcn/megahit/releases)
  
-     Downloand and Extract contents
+* Download and Extract contents
+* In 'seqFrog_conf.py' list path to megahit script in 'megahit_folder'
+
+6. Install [ABySS](https://github.com/bcgsc/abyss/releases)
+
+* Download and Extract contents
+* Install Boost, run 
+```
+$ wget http://downloads.sourceforge.net/project/boost/boost/1.56.0/boost_1_56_0.tar.bz2
+$ tar jxf boost_1_56_0.tar.bz2
+```
+* In abyss folder, run `$ ./configure`
+* 
+* In 'seqFrog_conf.py' list path to abyss script in 'abyss_folder'
+
+7.
