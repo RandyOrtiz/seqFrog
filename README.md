@@ -42,4 +42,9 @@ $ sudo apt install dos2unix
 $ sudo apt install ncbi-blast+
  ```
  
- 
+ 4. Install Trimmomatic
+* [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
+     Download and Extract Contents
+     In 'seqFrog_conf.py' list path to 'trimmomatic_folder'
+     
+ 5. Install Megahit
