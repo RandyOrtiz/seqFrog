@@ -89,3 +89,31 @@ $ make
 * If system fails to locate oases then add oases to the last line of your .bashrc file `export PATH="path/to/oases:$PATH"`
 *	If system fails to locate velvet then add velvet to the last line of your .bashrc  `export PATH="/path/to/velveth:$PATH"`
 
+
+9. Install [BBMap](https://sourceforge.net/projects/bbmap/)
+* Download and Extract contents
+* In 'seqFrog_conf.py' list path to tadpole script in 'tadpole_folder'
+
+10. Install [Trinity](https://github.com/trinityrnaseq/trinityrnaseq/releases)
+* Download and Extract contents
+* Install [Jellyfish](https://github.com/gmarcais/Jellyfish/releases)
+* Download and Extract contents
+* In main jellyfish folder, run
+```
+$ ./configure
+$ make
+$ sudo make install
+```
+* Install [Salmon](https://github.com/COMBINE-lab/salmon/releases/tag/v1.0.0)
+* Download and Extract contents
+* Add path to salmon to .bashrc file `export PATH="/path/to/salmon/bin:$PATH"`
+* In main trinity folder, run
+```
+$ make
+$ make plugins
+$ sudo make install
+```
+* Add path to trinity to .bashrc file `export TRINITY_HOME="/path/to/trinity/installation/dir"`
+* In 'seqFrog_conf.py' list path to trinity script in 'trinity_folder'
+* In 'seqFrog_conf.py' list path to Salmon script in 'salmon_folder'
+
