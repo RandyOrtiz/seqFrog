@@ -16,7 +16,7 @@
   *One by one...make sure that no errors appear, and if they do following the prompt to correct it.
  
  ```
- $ sudo apt install python3-pip
+ 	$ sudo apt install python3-pip
 	$ sudo apt install gcc
 	$ sudo apt install make
 	$ sudo apt install cmake
@@ -33,13 +33,13 @@
 	$ pip3 install pandas
 	$ pip3 install biopython
 	$ pip3 install tqdm
- $ sudo apt install sra-toolkit
- $ sudo apt-get update
- $ sudo apt install default-jre
- $ sudo apt install git
- $ sudo apt install velvet
- $ sudo apt install dos2unix
- $ sudo apt install ncbi-blast+
+ 	$ sudo apt install sra-toolkit
+ 	$ sudo apt-get update
+ 	$ sudo apt install default-jre
+ 	$ sudo apt install git
+ 	$ sudo apt install velvet
+ 	$ sudo apt install dos2unix
+ 	$ sudo apt install ncbi-blast+
  ```
  
  
