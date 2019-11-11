@@ -12,7 +12,7 @@
  
  2. Install Python (v3).
  
- Install the following dependencies:
+ 3. Install the following dependencies:
   *One by one...make sure that no errors appear, and if they do following the prompt to correct it.
  
  ```
