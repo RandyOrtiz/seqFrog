@@ -156,7 +156,92 @@ $ sudo make install
 * In 'seqFrog_conf.py' list path to kallisto script in 'kallisto_folder'
 
 
-16. 
+16. Shannon Installation in this order:
+* Install metis, numpy, and cvxopt
+```
+$ sudo apt-get install metis
+$ pip install numpy
+$ pip install cvxopt
+```
+* Install [Quorum](https://github.com/gmarcais/Quorum/releases)
+* In main quorum folder, run
+```
+$ ./configure
+$ make
+$ sudo make install
+```
+* Install [Shannon](https://github.com/sreeramkannan/Shannon/releases)
+* Download and Extract latest version
+* If using a linux system as assumed until this point, open terminal and run
+```
+$ dos2unix 'shannon.py' #drag shannon script into terminal
+```
+* Open shannon.py and add shebang (top line of script, must be python2): `#!/usr/bin/env python2`
+* Add locations of required directories in shannon.py
+* Make sure shannon.py is an executable file, right click and check permissions
+* In 'seqFrog_conf.py' list path to shannon script in 'shannon_folder'
+
+
+17. Install [Mitobim](https://github.com/chrishah/MITObim/releases/tag/v1.9.1)
+* Download and Extract latest version
+* In 'seqFrog_conf.py' list path to mitobim.pl script in 'mitobim_folder'
+* In 'seqFrog_conf.py' list path to mira script in 'mira_path'
+
+
+18. Install [BUSCO](https://gitlab.com/ezlab/busco)
+* Download and Extract latest version
+* In main busco folder, run
+```
+$ python setup.py install --user
+```
+* Install HMMER
+```
+$ wget http://eddylab.org/software/hmmer/hmmer.tar.gz
+$ tar zxf hmmer.tar.gz
+$ cd hmmer-3.2.1
+$ ./configure
+$ make
+$ sudo make install
+```
+* Install [Augustus](https://github.com/Gaius-Augustus/Augustus)
+* Download and Extract latest version
+* Open terminal and run the following
+```
+$ sudo apt install libboost-iostreams-dev
+$ sudo apt install zlib1g-dev (previously installed)
+$ sudo apt install libgsl-dev
+$ sudo apt install libboost-graph-dev
+$ sudo apt install libboost-all-dev
+$ sudo apt install libsuitesparse-dev
+$ sudo apt install liblpsolve55-dev
+$ sudo apt install libsqlite3-dev (previously installed)
+$ sudo apt install libmysql++-dev
+$ sudo apt install libbamtools-dev
+```
+* In main augustus folder, run
+```
+$ make
+$ sudo make install
+```
+* In .bashrc file add
+```
+export PATH="/path/to/augustus/bin:$PATH"
+export PATH="/path/to/augustus/scripts:$PATH"
+export AUGUSTUS_CONFIG_PATH="/path/to/augustus/config/"
+```
+* ...back to BUSCO...
+* In the config subfolder copy config.ini.default and paste as config.ini
+* In the config.ini folder state all dependencies...DO NOT USE QUOTES!!!
+* In 'seqFrog_conf.py' list path to run_BUSCO.py script in 'busco_folder'
+* [Install Lineages for BUSCO](https://busco.ezlab.org/)
+* Download and Extract relevent lineage dataset (Eukaryota odb9 in our case)
+* In 'seqFrog_conf' list path to lineage directory in 'busco_lin'
+
+
+> Congrats! If everything is installed correctly seqFrog should work!
+
+
+
 
 
 
