@@ -106,7 +106,7 @@ $ make
 $ sudo make install
 ```
 * Install [Salmon](https://github.com/COMBINE-lab/salmon/releases/tag/v1.0.0)
-* Download and Extract contents
+* Download and Extract contents (Salmon 1.0.0 recc.)
 * Add path to salmon to .bashrc file `export PATH="/path/to/salmon/bin:$PATH"`
 * In main trinity folder, run
 ```
