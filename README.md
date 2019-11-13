@@ -83,12 +83,23 @@ $ sudo make install
 
 8. Install Oases
 ```
-$ git clone --recursive https://github.com/dzerbino/oases
-$ make
+$ git clone git://github.com/dzerbino/velvet.git
+$ git clone git://github.com/dzerbino/oases.git
+```
+* Delete velvet folder in oases folder (you will notice that it is probably empty)
+* Move velvet folder into oases folder
+* In velvet folder, run
+```
+$ make MAXKMERLENGTH=198
+```
+* In oases folder, run
+```
+$ make MAXKMERLENGTH=198
 ```
 * In 'seqFrog_conf.py' list path to oases_pipeline script in 'oases_folder'
+*	Add to your .bashrc  `export PATH="/path/to/velveth:$PATH"`
+* This will require a system restart to take effect
 * If system fails to locate oases then add oases to the last line of your .bashrc file `export PATH="path/to/oases:$PATH"`
-*	If system fails to locate velvet then add velvet to the last line of your .bashrc  `export PATH="/path/to/velveth:$PATH"`
 
 
 9. Install [BBMap](https://sourceforge.net/projects/bbmap/)
@@ -236,6 +247,7 @@ export AUGUSTUS_CONFIG_PATH="/path/to/augustus/config/"
 * [Install Lineages for BUSCO](https://busco.ezlab.org/)
 * Download and Extract relevent lineage dataset (Eukaryota odb9 in our case)
 * In 'seqFrog_conf' list path to lineage directory in 'busco_lin'
+* Restart your system!
 
 
 > Congrats! If everything is installed correctly seqFrog should work!
