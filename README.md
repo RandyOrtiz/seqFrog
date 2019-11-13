@@ -86,7 +86,7 @@ $ sudo make install
 $ git clone --recursive https://github.com/dzerbino/oases
 $ make
 ```
-* In 'seqFrog_conf.py' list path to oases script in 'oases_folder'
+* In 'seqFrog_conf.py' list path to oases_pipeline script in 'oases_folder'
 * If system fails to locate oases then add oases to the last line of your .bashrc file `export PATH="path/to/oases:$PATH"`
 *	If system fails to locate velvet then add velvet to the last line of your .bashrc  `export PATH="/path/to/velveth:$PATH"`
 
@@ -177,7 +177,7 @@ $ sudo make install
 $ dos2unix 'shannon.py' #drag shannon script into terminal
 ```
 * Open shannon.py and add shebang (top line of script, must be python2): `#!/usr/bin/env python2`
-* Add locations of required directories in shannon.py
+* Add locations of required scripts in shannon.py ex. jellyfish_path = home/jellyfish_folder/jellyfish ***leave 'python', 'parallel', and 'gpmetis' as is
 * Make sure shannon.py is an executable file, right click and check permissions
 * In 'seqFrog_conf.py' list path to shannon script in 'shannon_folder'
 
