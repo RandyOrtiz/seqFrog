@@ -97,7 +97,7 @@ $ make MAXKMERLENGTH=198
 $ make MAXKMERLENGTH=198
 ```
 * In 'seqFrog_conf.py' list path to oases_pipeline script in 'oases_folder'
-*	Add to your .bashrc  `export PATH="/path/to/velveth:$PATH"`
+*	Add to your .bashrc  `export PATH="/path/to/velvet:$PATH"`
 * This will require a system restart to take effect
 * If system fails to locate oases then add oases to the last line of your .bashrc file `export PATH="path/to/oases:$PATH"`
 
