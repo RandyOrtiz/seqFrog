@@ -39,10 +39,10 @@ $ sudo apt install sra-toolkit
 $ sudo apt-get update
 $ sudo apt install default-jre
 $ sudo apt install git
-$ sudo apt install velvet
 $ sudo apt install dos2unix
 $ sudo apt install ncbi-blast+
 $ sudo apt install cd-hit
+$ sudo apt install pkgconf
  ```
  
  
