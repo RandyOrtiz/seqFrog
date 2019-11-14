@@ -40,7 +40,6 @@ $ sudo apt-get update
 $ sudo apt install default-jre
 $ sudo apt install git
 $ sudo apt install dos2unix
-$ sudo apt install ncbi-blast+
 $ sudo apt install cd-hit
 $ sudo apt install pkgconf
  ```
@@ -135,8 +134,10 @@ $ sudo make install
 * In 'seqFrog_conf.py' list path to transrate script in 'transrate_folder'
 
 
-12. Install [Blast](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/)
-* Download and Extract contents
+12. Install [Blast](https://www.ncbi.nlm.nih.gov/books/NBK279671/)
+* Click on the link on the page that starts with 'ftp://'
+* Click on 'latest'
+* Download and Extract contents of latest release
 * In main blast folder, run
 ```
 $ ./configure
