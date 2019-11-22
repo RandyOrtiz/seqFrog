@@ -192,6 +192,23 @@ $ dos2unix 'shannon.py' #drag shannon script into terminal
 * Add locations of required scripts in shannon.py ex. jellyfish_path = home/jellyfish_folder/jellyfish ***leave 'python', 'parallel', and 'gpmetis' as is
 * Make sure shannon.py is an executable file, right click and check permissions
 * In 'seqFrog_conf.py' list path to shannon script in 'shannon_folder'
+>Troubleshooting shannon: if quorum fails due to low quality scores then append the 'run_quorum.py' file in shannon directory as follows: Replace:
+```
+    run_cmd(quorum_path + jobs_string + " --prefix " + base_file + " " +
+reads_files[0])
+
+with
+
+    run_cmd(quorum_path + jobs_string + " -q 33 --prefix " + base_file + "
+" + reads_files[0])
+
+and
+    run_cmd(quorum_path + jobs_string + " --prefix " + base_file + " " +
+new_reads1_file + " " + new_reads2_file)
+with
+    run_cmd(quorum_path + jobs_string + " -q 33 --prefix " + base_file + "
+" +  new_reads1_file + " " + new_reads2_file)
+```
 
 
 17. Install [Mitobim](https://github.com/chrishah/MITObim/releases/tag/v1.9.1)
