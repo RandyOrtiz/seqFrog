@@ -42,6 +42,7 @@ $ sudo apt install git
 $ sudo apt install dos2unix
 $ sudo apt install cd-hit
 $ sudo apt install pkgconf
+$ sudo pip3 install sh
  ```
  
  
