@@ -66,6 +66,7 @@ $ sudo pip3 install sh
 $ wget http://downloads.sourceforge.net/project/boost/boost/1.56.0/boost_1_56_0.tar.bz2
 $ tar jxf boost_1_56_0.tar.bz2
 ```
+* Move boost folder into abyss folder
 * In abyss folder, run
 ```
 $ ./configure
