@@ -128,6 +128,11 @@ $ sudo make install
 * Add path to trinity to .bashrc file `export TRINITY_HOME="/path/to/trinity/installation/dir"`
 * In 'seqFrog_conf.py' list path to trinity script in 'trinity_folder'
 * In 'seqFrog_conf.py' list path to salmon script in 'salmon_folder'
+* Run the following to update system library cache
+```
+$ sudo ldconfig
+```
+
 
 
 11. Install [Transrate](http://hibberdlab.com/transrate/installation.html)
