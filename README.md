@@ -79,7 +79,7 @@ $ sudo make install
 
 7. Install [SPAdes](http://cab.spbu.ru/software/spades/)
 * Download and Extract contents
-* In 'seqFrog_conf.py' list path to abyss script in 'abyss_folder'
+* In 'seqFrog_conf.py' list path to spades script in 'spades_folder'
 
 
 8. Install Oases
