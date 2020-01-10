@@ -238,7 +238,7 @@ run_cmd(quorum_path + jobs_string + " -q 33 --prefix " + base_file + "
 * Download and Extract latest version
 * In main busco folder, run
 ```
-$ python setup.py install --user
+$ sudo python setup.py install --user
 ```
 * Install HMMER
 ```
