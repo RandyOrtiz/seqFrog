@@ -19,7 +19,7 @@ Introducing a modified pipeline from seqFrog 2019 by:
  
  ```
 $ sudo apt install python3-pip
-$ sudo pip3 install numpy
+$ sudo pip install numpy
 $ sudo apt install gcc
 $ sudo apt install make
 $ sudo apt install cmake
