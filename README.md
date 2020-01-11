@@ -239,6 +239,10 @@ run_cmd(quorum_path + jobs_string + " -q 33 --prefix " + base_file + "
 * In main busco folder, run
 ```
 $ sudo python setup.py install --user
+       or
+$ git clone https://gitlab.com/ezlab/busco.git
+$ cd busco/
+$ python3 setup.py install --user #for busco v4
 ```
 * Install HMMER
 ```
