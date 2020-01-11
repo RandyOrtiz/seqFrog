@@ -260,7 +260,7 @@ $ sudo apt install libboost-graph-dev
 $ sudo apt install libboost-all-dev
 $ sudo apt install libsuitesparse-dev
 $ sudo apt install liblpsolve55-dev
-$ sudo apt install libsqlite3-dev (previously installed)
+$ sudo apt install libsqlite3-dev
 $ sudo apt install libmysql++-dev
 $ sudo apt install libbamtools-dev
 ```
