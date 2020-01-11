@@ -278,6 +278,7 @@ $ sudo make install
 export PATH="/path/to/augustus/bin:$PATH"
 export PATH="/path/to/augustus/scripts:$PATH"
 export AUGUSTUS_CONFIG_PATH="/path/to/augustus/config/"
+export BUSCO_CONFIG_FILE="/path/to/myconfig.ini"
 ```
 * ...back to BUSCO...
 * In the config subfolder copy config.ini.default and paste as config.ini
