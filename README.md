@@ -44,6 +44,17 @@ $ sudo apt install dos2unix
 $ sudo apt install cd-hit
 $ sudo apt install pkgconf
 $ sudo pip3 install sh
+
+
+$ sudo apt install python3-pip gcc make cmake libbz2-dev libncurses5-dev zlib1g-dev libncursesw5-dev liblzma-dev libcurl4-openssl-dev libssl-dev libsparsehash-dev bowtie2 samtools sra-toolkit default-jre git dos2unix cd-hit pkgconf
+
+$ sudo pip3 install sh
+$ sudo pip install numpy
+$ pip3 install pandas
+$ pip3 install biopython
+$ pip3 install tqdm
+$ sudo apt-get update
+
  ```
  
  
